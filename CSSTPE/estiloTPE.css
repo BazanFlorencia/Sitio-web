@@ -1,0 +1,190 @@
+/*width 1308*/
+/*navigation color rgb(56, 56, 233)*/
+
+body {
+    background-image: linear-gradient(to top right, rgb(255, 251, 32),rgb(231, 19, 19));
+    background-attachment: fixed;
+}
+
+.titulo {
+    font-size: 90px;
+    padding-top: 50px;
+    margin-top: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 160px;
+    background-image: url(../images/guitarra.jpg), url(../images/guitarra1.jpg);
+    background-repeat: no-repeat;
+    background-position: left, right;
+    background-size: 50%, 50%;
+    color: rgb(253, 251, 251);
+    letter-spacing: 5px;
+    -webkit-text-stroke: 4px;
+    -webkit-text-stroke-color: rgb(2, 2, 2);
+    font-weight: bold;
+}
+
+.navigation {
+    display: flex;
+    background: black;
+    border-bottom: 7px solid #CD1313;
+    padding-left: 0;
+    height: 50px;
+    color: white;
+}
+
+div > input {
+    margin: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.subtitulo {
+    text-align: center;
+    background-color: #CD1313;
+    border-radius: 2px;
+    width: 500px;
+    color: black;
+    margin: 0px 10px;
+}
+
+.item {
+    list-style: none;
+    margin: 0px 10px;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 20px;
+}
+
+button {
+    width: 140px;
+    height: 35px;
+    font-size: larger;
+    margin-left: 120px;
+}
+
+input {
+    width: 250px;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.letranegra {
+    color: black;
+}
+
+.containerMain {
+    min-height: calc(100vh - 60px - 20px - 40px);
+}
+
+.containterParrafo {
+    border-radius: 5px;
+    border: solid black;
+}
+.container-around {
+    justify-content: space-around;
+    display: flex;
+}
+
+.container-flex {
+    justify-content: space-between;
+    display: flex;
+    width: auto;
+}
+
+.form {
+    height: 385px;
+}
+
+p {
+    display: flex;
+    text-align: justify;
+    font-size: 16px;
+    width: 630px;
+    height: auto;
+    margin: 10px 0px;
+    padding: 10px;
+}
+
+
+.dosImagenes {
+    margin: 5px 0px;
+    width: 200px;
+}
+
+.flex-evenly {
+    justify-content:space-evenly ;
+    display: flex;
+}
+
+img {
+    flex:auto;
+    height: 250px;
+    display: flex;
+    margin: 5px 176px;
+    border-radius: 5px;
+    
+}
+
+.large {
+    display: flex;
+    width: auto;
+    border-radius: 5px;
+    border: solid black;
+}
+
+.contenedor-imagen {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.tamaño {
+    margin: 30px;
+    
+}
+
+
+.tamañoimgcatalogo{
+    display:flex;
+    justify-content: space-evenly;
+    width: 280px;
+    height: 280px;
+}
+
+footer {
+    height: 20px;
+}
+.btmvalido {
+    height: 25px;
+    width: 50px;
+    font-size: small;
+    margin-left: 10px;
+    margin-top: 15px;
+    
+}
+.cajavalidacion {
+    width: 150px;
+    height: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    
+}
+#respuesta {
+    margin-left: 20px;
+}
+.validacion{
+    display: flex;
+    justify-content: left;
+    
+}
+.textovalidacion{
+    width: 130px;
+    height: 20px;
+    margin-bottom: 0px;
+}
