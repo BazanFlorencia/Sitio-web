@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/tpe.css">
+    </head>
+    <body class="body"> 
+        <div class="container">
+            <header>
+                <div>
+                    <h1 class="titulo">Melómanos</h1>
+                </div>
+                <div class="barra-navegacion-menu">
+                    <div class="btn_menu"><a>MENÚ</a></div>
+                </div>
+                <div class="menu">
+                    <ul class="navigation">
+                        <li class="item"> <a href="index.html">Home</a></li>
+                        <li class="item"> <a href="catalogo.html"> Catálogo</a></li>
+                        <li class="item"> <a href="contacto.html">CONTACTO</a></li>
+                    </ul>
+                </div>
+            </header>
+            <div id="formularioCompra">
+                <form action="" id="registro">    
+                    <div id="input-compra-productos">
+                        <div class="cargar-datos">
+                            <input id="nombreyapellido" type="text" value="" placeholder="Ingresa su nombre y apellido"name="name" required>
+                            <input id="direccion" type="text" value="" placeholder="Ingresa su dirección" name="direction" required>
+                            <input id="mail" type="mail" value="" placeholder="Ingresa tu mail" name="email" required>
+                            <select name="delivery" id="entrega" required>
+                                <option disabled selected>Selecciona una opción</option>
+                            </select>
+                            <select name="product" id="producto" required>
+                                <option disabled selected>Selecciona una opción</option>
+                            </select>
+                        </div>
+                        <button type="submit" id="add_compra">ENVIAR</button>
+                        
+                    </div>
+                </form>
+                <form id="form-edit" class="ocultar" action="">
+                    <fieldset id="inputsEdit">
+                        <h2>Modificar</h2>
+                        <div class="inputsEditar">
+                            <input name="id" id="inputEditId" type="hidden">
+                            <input name="name" placeholder="Ingresa su nombre y apellido" id="inputEditName" type="text" required>
+                            <input name="direction" placeholder="Ingresa su dirección" id="inputEditDirection" type="text" required>
+                            <input name="email" placeholder="Ingresa tu mail" id="inputEditEmail" type="text" required> 
+                            <input name="delivery" id="editEntrega" type="list" required>
+                            <input name="product" id="editProductos" type="text" required>
+                        </div>
+                            <button class="btn-enviar-edit">ENVIAR</button>
+                        <p id="respuesta"></p>
+                    </fieldset>
+                </form>
+                    <div>
+                        <h3 class="informacion">REGISTRO</h3>
+                        <table id="tablaDinamica">
+                            <thead>
+                                <tr class="tamañoColumnas">
+                                    <th>Nombre</th>
+                                    <th>Dirección</th>
+                                    <th>E-mail</th>
+                                    <th>Forma de entrega</th>
+                                    <th>Productos</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cuerpo-tabla">
+                               
+                            </tbody>
+                        </table> 
+                        <p id="descuento"></p>                     
+                    </div>
+                
+            </div>          
+            <footer class="footer">
+                <div class="redes">
+                    <p>SEGUINOS EN NUESTRAS REDES SOCIALES</p>
+                </div>
+                <div class="iconos_footer"><img src="images/icono-facebook.jpg" alt="facebook"></div>
+                <div class="iconos_footer"><img src="images/icono_instagram.jpg" alt="instagram"></div>
+            </footer>
+        
+        </div>
+        <script src="js/menu-desplegable.js"></script>
+        <script src="js/api_rest.js"></script>
+    </body>
+</html>
